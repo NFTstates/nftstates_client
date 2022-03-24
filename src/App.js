@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navigator from "./components/Navigator";
 import ControlledTabs from "./components/ControlledTabs";
-import Cards from "./components/Cards";
+import NFTs from "./components/NFTs";
+// import { Background } from "./js/background";
+
+const { Background } = require("./js/background");
 
 const App = () => {
   return (
     <div>
       <Navigator />
       <ControlledTabs />
-      <div>
-        <Cards />
-      </div>
+      <NFTs />
     </div>
   );
 };
