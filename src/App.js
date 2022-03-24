@@ -8,7 +8,9 @@ const App = () => {
     <div>
       <Navigator />
       <ControlledTabs />
-      <Cards />
+      <div>
+        <Cards />
+      </div>
     </div>
   );
 };
