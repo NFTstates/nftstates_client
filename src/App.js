@@ -1,7 +1,7 @@
 import React from "react";
 import Navigator from "./components/Navigator";
 import ControlledTabs from "./components/ControlledTabs";
-import NFTs from "./components/NFTs";
+import ItemListContainer from "./pages/ItemListContainer";
 import Sheeps from "./components/Sheeps";
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
       <Navigator />
       <Sheeps />
       <ControlledTabs />
-      <NFTs />
+      <ItemListContainer />
     </div>
   );
 };

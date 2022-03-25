@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import { Hill } from "../js/hill";
-import { SheepController } from "../js/sheep-controller";
-import { Moon } from "../js/moon";
+import { Hill } from "./Background/hill";
+import { SheepController } from "./Background/sheep-controller";
+import { Moon } from "./Background/moon";
 
 const Sheeps = () => {
   const canvasRef = useRef(null);
