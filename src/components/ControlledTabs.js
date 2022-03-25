@@ -11,9 +11,11 @@ const ControlledTabs = () => {
       onSelect={(k) => setKey(k)}
       className="mb-3"
     >
-      <Tab eventKey="home" title="Home"></Tab>
-      <Tab eventKey="profile" title="Profile"></Tab>
-      <Tab eventKey="contact" title="Contact" disabled></Tab>
+      <Tab eventKey="home" title="대출을 원하는 상품"></Tab>
+      <Tab eventKey="profile" title="1억 이상 상품"></Tab>
+      <Tab eventKey="contact" title="천만원 이상" disabled></Tab>
+      <Tab eventKey="contact" title="백만원 이상" disabled></Tab>
+      <Tab eventKey="contact" title="게시판" disabled></Tab>
     </Tabs>
   );
 };

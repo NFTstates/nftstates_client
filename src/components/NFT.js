@@ -10,7 +10,7 @@ const NFT = () => {
         <Card.Text>비둘기 후드를 드립니다.</Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
-        <ListGroupItem>Stapple 프로젝트</ListGroupItem>
+        <ListGroupItem>Staple 프로젝트</ListGroupItem>
         <ListGroupItem>현재 바닥 가격</ListGroupItem>
         <ListGroupItem></ListGroupItem>
       </ListGroup>

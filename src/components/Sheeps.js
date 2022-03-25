@@ -5,10 +5,10 @@ import { Moon } from "../js/moon";
 
 const Sheeps = () => {
   const canvasRef = useRef(null);
-  const requestAnimationRef = useRef(null);
+  const requestAnimationRef = useRef(null); // useRef는 current속성을 가진 객체를 반환
 
   const render = () => {
-    const canvas = canvasRef.current;
+    const canvas = canvasRef.current; // current에는 null이 들어가있음
     const ctx = canvas.getContext("2d");
 
     const moon = new Moon();
