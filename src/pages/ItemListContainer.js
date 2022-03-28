@@ -1,18 +1,12 @@
 import React from "react";
 import Item from "../components/Item";
 import styled from "styled-components";
-import { useSelector, useDispatch } from "react-redux";
 
-const NFTs = () => {
+const ItemListContainer = () => {
   const Gallery = styled.section`
     display: flex;
     flex-wrap: wrap;
   `;
-
-  const dispatch = useDispatch();
-  const handleClick = (item) => {
-    // dispatch(DoSomething(item.id)); // redux도입
-  };
 
   return (
     <div>
@@ -21,19 +15,11 @@ const NFTs = () => {
         {Array(6)
           .fill(-1)
           .map((item, idx) => {
-            return (
-              <Item
-                item={item}
-                key={idx}
-                handleClick={() => {
-                  handleClick(item);
-                }}
-              />
-            );
+            return <Item item={item} key={idx} />;
           })}
       </Gallery>
     </div>
   );
 };
 
-export default NFTs;
+export default ItemListContainer;
