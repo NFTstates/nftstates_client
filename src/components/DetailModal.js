@@ -1,7 +1,18 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
+import styled from "styled-components";
 
 function DetailModal(props) {
+  const Figure = styled.div`
+    display: flex;
+  `;
+  const Image = styled.img.attrs({
+    src: "ape.png",
+  })`
+    width: 270px;
+    height: 270px;
+  `;
+
   return (
     <Modal
       {...props}
@@ -11,23 +22,23 @@ function DetailModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
+          Bored Ape Yacht Club
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit
-          amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-          quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit
-          amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget
-          quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-        </p>
+        <Figure>
+          <Image />
+          <div>
+            <h4>원하는 대출 기간</h4>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <button>제출</button>
+          </div>
+        </Figure>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={props.onHide}>Close</Button>

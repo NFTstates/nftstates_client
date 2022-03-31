@@ -9,13 +9,13 @@ const Item = () => {
     <>
       <Button variant="primary" onClick={() => setModalShow(true)}>
         <Card style={{ width: "18rem" }}>
-          <Card.Img variant="top" src="pigeon.png" />
+          <Card.Img variant="top" src="ape.png" />
           <Card.Body>
             <Card.Title>Staple's 비둘기</Card.Title>
             <Card.Text>비둘기 후드를 드립니다.</Card.Text>
           </Card.Body>
           <ListGroup className="list-group-flush">
-            <ListGroupItem>Staple 프로젝트</ListGroupItem>
+            <ListGroupItem>Bored Ape Yacht Club</ListGroupItem>
             <ListGroupItem>현재 바닥 가격</ListGroupItem>
             <ListGroupItem></ListGroupItem>
           </ListGroup>
