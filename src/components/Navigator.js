@@ -2,6 +2,15 @@ import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 
 const Navigator = () => {
+  const handleLogin = async (event) => {
+    event.preventDefault();
+    try {
+      const accounts = await window.klaytn.enable();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -13,7 +22,7 @@ const Navigator = () => {
             <Nav.Link href="#pricing">회사 소개</Nav.Link>
             <Nav.Link href="#pricing">내 계좌</Nav.Link>
             <Nav.Link href="#pricing">알림</Nav.Link>
-            <Nav.Link href="#pricing">로그인</Nav.Link>
+            <Nav.Link onClick={handleLogin}>로그인</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
